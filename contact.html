@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/bio logo.jpeg">
+    <title>BIO PACKS</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <style>
+    #contact-txt {
+      font-weight: bold;
+      font-size: 27px;
+      width: 16%;
+      overflow: hidden;
+      display: inline-block;
+      border-right: 1px solid #000;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 4px;
+      animation: contact-txt 2s steps(40, end);
+    }
+    @keyframes contact-txt {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 16%;
+      }
+    }
+  </style>
+  <body onload="n4()">
+    <header>
+      <img id="BIO PACKS" src="Images/bio logo.jpeg" width="50px" height="50px">
+      <h1>BIO PACKS</h1>
+    </header>
+
+    <nav>
+      <ul class="headings">
+        <li class="nav-class" id="nav1"><a href="index.html">Home</a></li>
+        <li class="nav-class" id="nav2"><a href="about.html">About</a></li>
+        <li class="nav-class" id="nav3"><a href="login.html">login</a></li>
+        <li class="nav-class" id="nav4"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="contact">
+      <h2 id="contact-txt">
+        Contact
+        <b
+          style="
+            color: #002a54ef;
+            text-shadow: 1px 1px 3px lightblue;
+            text-decoration: underline;
+          "
+          >Us</b
+        >
+      </h2>
+      <br /><br />
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <br />
+        <button type="submit" id="btn" onclick="popup()">
+          Send
+        </button>
+      </form>
+    </section>
+
+    <div id="popup">
+      <span id="close" onclick="cln()">close</span>
+      <h2>Thank you for contacting us!</h2>
+      <p style="text-align: center;">We'ill be touch soon.</p>
+    </div>
+
+    <div class="second">
+      <div>
+        <h4>ABOUT BIO PACKS</h4>
+        <a href="">Who We Are</a>
+        <a href="">Blog </a>
+        <a href="">Work With Us</a>
+        <a href="">Investor Relations</a>
+        <a href="">Report Fraud</a>
+        <a href="">Press Kit</a>
+        <a href="">Contact Us</a>
+      </div>
+  
+      <div>
+        <h4>FOR ENTERPRISES</h4>
+        <a href=""> BIO PACKS For Enterprise</a>
+      </div>
+  
+      <div>
+        <h4>LEARN MORE</h4>
+        <a href="">Privacy</a>
+        <a href="">Security</a>
+        <a href="">Terms</a>
+        <a href=""> Sitemap</a>
+      </div>
+  
+      <div class="social">
+        <h4>SOCIAL LINKS</h4>
+        <div>
+          <a href="">
+            <i class="fab fa-facebook-f"></i><h4>BIO PACKS</h4>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter"></i><h4>BIO PACKS</h4>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram"></i><h4>BIO PACKS</h4>
+          </a>
+          <a href="">
+            <i class="fab fa-youtube"></i><h4>BIO PACKS</h4>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-linkedin"></i><h4>BIO PACKS</h4>
+          </a>
+        </div>
+  
+        <div class="img">
+          <a href="">
+            <img src="img/9.download (1).webp" alt="appstore" width="150px"> </a><br>
+          <a href="">
+            <img src="img/9.download.webp" alt="playstore" width="150px"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+  <hr />
+      <p class="third">
+        By continuing past this page, you agree to our Terms of Service, Cookie
+        Policy, Privacy Policy and Content Policies. All trademarks are
+        properties of their respective owners. 2023-2025 &copy; COCO FMAILY™ Ltd.
+        All rights reserved.
+      </p>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
